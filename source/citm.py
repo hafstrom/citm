@@ -274,14 +274,14 @@ def main():
 
     def salscr():
         global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '| \______       \ /    \   _/               |          |'
-        mb = ' \_____  \       [     _]_/. ___ .  . ___ . |          |'
-        mc = ' _     \  |       \  _/     |   |    |   |  |          |'
-        md = '| \____/  |        \/       |___|    |___|  |          |'
-        me = ' \_______/          |      \'     \'  \'     \' |          |'
-        mf = ' _ _ _ _ _ _ _ _ _ _ ] _ _ _ _ _ _ _ _ _ _ _|          |'
-        mg = '                    /                       |          |'
-        mh = '                    |                       |          |'
+        ma = '| \______       \ /    \   _/                        | |'
+        mb = ' \_____  \       [     _]_/. ___ .  . ___ .  . ___ . | |'
+        mc = ' _     \  |       \  _/     |   |    |   |    |   |  | |'
+        md = '| \____/  |        \/       |___|    |___|    |___|  | |'
+        me = ' \_______/          |      \'     \'  \'     \'  \'     \' | |'
+        mf = ' _ _ _ _ _ _ _ _ _ _ ] _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ | |'
+        mg = '                    /                                | |'
+        mh = '                    |                                | |'
         mi = '        x  .                 , #                       |'
         mj = '                  #               .              .     |'
         print(' ________________________________________________________________________________________________________________')
@@ -893,16 +893,23 @@ def main():
 
         def lvfac():
             clr()
-            global pnt3, pnts
+            global pnt3, pnts, sal
             if pnt3 == 0:
                 pnts = pnts + 1
                 pnt3 = 1
             pts()
             salscr()
-            print('| You go to the saloon and try to open the door but it\'s locked                                                  |')
+
+            if sal:
+                print('| You go to the factory and try to open the door but it\'s locked                                                 |')
+            
+            else:
+                print('| You got what you thought was a saloon, only to find out it\'s actually a factory. The door is locked            |')
+                sal = 1
+
             print('| 1. Knock                                                                                                       |')
-            print('| 2. Force open                                                                                                  |')
-            print('| 3. Wait around                                                                                                 |')
+            print('| 2. Wait around                                                                                                 |')
+            print('| 3. Force open                                                                                                  |')
             print('| 4. Leave                                                     ___________________ _________________ ____________|')
             print('|_____________________________________________________________| Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
             print('                                                              |___________________|_________________|____________|')
@@ -912,10 +919,10 @@ def main():
             if a == '1' or a == 'knock' or a == 'knock on door':
                 print('wip')
 
-            elif a == '2' or a == 'force door' or a == 'force open' or a == 'force open door':
+            elif a == '2' or a == 'wait' or a == 'wait around':
                 print('wip')
-                
-            elif a == '3' or a == 'wait' or a == 'wait around':
+
+            elif a == '3' or a == 'force door' or a == 'force open' or a == 'force open door':
                 print('wip')
 
             elif a == '4' or a == 'leave':
