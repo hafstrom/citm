@@ -1,1 +1,0 @@
-input("Unless you pressed 4 on the main menu something went wrong...")
