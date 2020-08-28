@@ -11,6 +11,7 @@ o - Create a new and improved storyboard
 o - add points for filling canteen, crossing the river for the first time
 o - Add in the lvl2vl level
 ? - Rework the city
+o - walk mountains
 
     low priority
 o - rework the tdnc variable and whole "that does not compute" system.
@@ -137,80 +138,80 @@ def main():
         print('|                                                                                                                |')
 
     def sttplc(): # start place
-        global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '  \__ /                                                |'
-        mb = '     \ .-\'                               .             |'
-        mc = '______\_---______________________________|\ ___________|'
-        md = '-_   _-_                                 | \_          |'
-        me = '_|   |o|_-_                              | \ \__       |'
-        mf = ' | _-_/_|o|                              |  \'   \      |'
-        mg = '\__|o| _-_                               | |  \  \_    |'
-        mh = '-_\____|o|                               |  \  |   \   |'
-        mi = 'o|__/                                    |      \   \  |'
-        mj = '                                                       |'
+        global mapa, mapb, mapc, mapd, mape, mapf, mapg, maph, mapi, mapj
+        mapa = '  \__ /                                                |'
+        mapb = '     \ .-\'                               .             |'
+        mapc = '______\_---______________________________|\ ___________|'
+        mapd = '-_   _-_                                 | \_          |'
+        mape = '_|   |o|_-_                              | \ \__       |'
+        mapf = ' | _-_/_|o|                              |  \'   \      |'
+        mapg = '\__|o| _-_                               | |  \  \_    |'
+        maph = '-_\____|o|                               |  \  |   \   |'
+        mapi = 'o|__/                                    |      \   \  |'
+        mapj = '                                                       |'
         print(' ________________________________________________________________________________________________________________')
-        print('|                                                \ __/    ' + ma)
-        print('|             .                               \'-. /       ' + mb)
-        print('|__________ _/|______________________________---_/________' + mc)
-        print('|          / /|               _          _             _--' + md)
-        print('|       __/ | |              |o|________|o|____        |__' + me)
-        print('|      /   /  |                   |====        \_______| O' + mf)
-        print('|    _/       |               ====|====                   ' + mg)
-        print('|   /  /   |  |               ====|==--                  _' + mh)
-        print('|  /  /   /   |               =-==|  _                   |' + mi)
-        print('|                                  \|o|                   ' + mj)
+        print('|                                                \ __/    ' + mapa)
+        print('|             .                               \'-. /       ' + mapb)
+        print('|__________ _/|______________________________---_/________' + mapc)
+        print('|          / /|               _          _             _--' + mapd)
+        print('|       __/ | |              |o|________|o|____        |__' + mape)
+        print('|      /   /  |                   |====        \_______| O' + mapf)
+        print('|    _/       |               ====|====                   ' + mapg)
+        print('|   /  /   |  |               ====|==--                  _' + maph)
+        print('|  /  /   /   |               =-==|  _                   |' + mapi)
+        print('|                                  \|o|                   ' + mapj)
         print('|________________________________________________________________________________________________________________|')
         print('|                                                                                                                |')
 
     def hlfway(): # half way
-        global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '  \__ /                                                |'
-        mb = '     \ .-\'                                .            |'
-        mc = '-\'-__ \_--- _---_ ________________________|\_ _________|'
-        md = '____|       ]\'0\'[                         |  \_        |'
-        me = ']0[ |         |  _---_                    | \_ \       |'
-        mf = '  \_   _---_  |__]\'0 [                    |   \ \__    |'
-        mg = '    \'-_]\'0\'[ / _---_                      | |      \   |'
-        mh = '      \_____/__]\'0\'[                      | | \' \   \_ |'
-        mi = ' _---_   _/                               |  \   |    \|'
-        mj = ' ] 0\'[__/                                 |       \    |'
+        global mapa, mapb, mapc, mapd, mape, mapf, mapg, maph, mapi, mapj
+        mapa = '  \__ /                                                |'
+        mapb = '     \ .-\'                                .            |'
+        mapc = '-\'-__ \_--- _---_ ________________________|\_ _________|'
+        mapd = '____|       ]\'0\'[                         |  \_        |'
+        mape = ']0[ |         |  _---_                    | \_ \       |'
+        mapf = '  \_   _-s-_  |__]\'0 [                    |   \ \__    |'
+        mapg = '    \'-_]0\'\'[ / _---_                      | |      \   |'
+        maph = '      \_____/__]\'0\'[                      | | \' \   \_ |'
+        mapi = ' _---_   _/                               |  \   |    \|'
+        mapj = ' ] 0\'[__/                                 |       \    |'
         print(' ________________________________________________________________________________________________________________')
-        print('|                                                \ __/    ' + ma)
-        print('|       .                                     \'-. /       ' + mb)
-        print('|____ _/|_________ _._ __________ _._ _______---_/_____ __' + mc)
-        print('|    / /|         ] 0 [__________] 0 [_____             |_' + md)
-        print('| __/ | |                 | ======         \'-___________| ' + me)
-        print('|/    | |          ==-=== | ==.===                        ' + mf)
-        print('|    /  |          ===¤== | ===-==                        ' + mg)
-        print('|       |          ===|== | =-====                        ' + mh)
-        print('|/   |  |          =-==== | ==_._                         ' + mi)
-        print('|   /   |          ====-=  \_]\'0 [                        ' + mj)
+        print('|                                                \ __/    ' + mapa)
+        print('|       .                                     \'-. /       ' + mapb)
+        print('|____ _/|_________ _._ __________ _._ _______---_/_____ __' + mapc)
+        print('|    / /|         ] 0 [__________] 0 [_____             |_' + mapd)
+        print('| __/ | |                 | ======         \'-___________| ' + mape)
+        print('|/    | |          ==-=== | ==.===                        ' + mapf)
+        print('|    /  |          ===¤== | ===-==                        ' + mapg)
+        print('|       |          ===|== | =-====                        ' + maph)
+        print('|/   |  |          =-==== | ==_._                         ' + mapi)
+        print('|   /   |          ====-=  \_]\'0 [                        ' + mapj)
         print('|________________________________________________________________________________________________________________|')
         print('|                                                                                                                |')
 
     def rvrscr(): # river screen
-        global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '     .                xXXx            | ._/        .   |'
-        mb = '  o               .            .xX    |.|      .       |'
-        mc = '       .     xCx   .       ____________________________|'
-        md = '__________________________/        ~                   |'
-        me = '                                -        ~ ~        .  |'
-        mf = '   .    -      ~     .-     .    ~        -            |'
-        mg = '  - -      ~~ -   -          ~  ____________________   |'
-        mh = '   ____________________________/      xXCXXxcx      \__|'
-        mi = '__/  xXx.                                              |'
-        mj = '                                        xx             |'
+        global mapa, mapb, mapc, mapd, mape, mapf, mapg, maph, mapi, mapj
+        mapa = '     .                xXXx            | ._/        .   |'
+        mapb = '  o               .            .xX    |.|      .       |'
+        mapc = '       .     xCx   .       ____________________________|'
+        mapd = '__________________________/        ~                   |'
+        mape = '                                -        ~ ~        .  |'
+        mapf = '   .    -      ~     .-     .    ~        -            |'
+        mapg = '  - -      ~~ -   -          ~  ____________________   |'
+        maph = '   ____________________________/      xXCXXxcx      \__|'
+        mapi = '__/  xXx.                                              |'
+        mapj = '                                        xx             |'
         print(' ________________________________________________________________________________________________________________')
-        print('|      .                       |.| |                      ' + ma)
-        print('|                      .       \_ .|     xxCXx   .        ' + mb)
-        print('|          xXcx                  | |              xxX     ' + mc)
-        print('|_______________________           xx.       .          __' + md)
-        print('|       ~            .  \________________ _ ___________/  ' + me)
-        print('|    ~           ~  ~           -        / \   _      ~~  ' + mf)
-        print('|   .    -     ~            ~     ~ ~       _ / \         ' + mg)
-        print('|__________________  ~  .        ~  ~      / \     . ~    ' + mh)
-        print('|                  \______________________________________' + mi)
-        print('|         . .                        .                    ' + mj)
+        print('|      .                       |.| |                      ' + mapa)
+        print('|                      .       \_ .|     xxCXx   .        ' + mapb)
+        print('|          xXcx                  | |              xxX     ' + mapc)
+        print('|_______________________           xx.       .          __' + mapd)
+        print('|       ~            .  \________________ _ ___________/  ' + mape)
+        print('|    ~           ~  ~           -        / \   _      ~~  ' + mapf)
+        print('|   .    -     ~            ~     ~ ~       _ / \         ' + mapg)
+        print('|__________________  ~  .        ~  ~      / \     . ~    ' + maph)
+        print('|                  \______________________________________' + mapi)
+        print('|         . .                        .                    ' + mapj)
         print('|________________________________________________________________________________________________________________|')
         print('|                                                                                                                |')
 
@@ -233,28 +234,28 @@ def main():
         print('|                                                                                                                |')
 
     def twnscr(): # town screen
-        global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '                        _                              |'
-        mb = '-___                  _| |                             |'
-        mc = '| ¤|           .     | |.|_          .                 |'
-        md = '|  |___---___        | | | |                           |'
-        me = '    |¤ |-|  |        \_  |.|    \'       xx             |'
-        mf = '____|  |-|  |          | ._/     ,                     |'
-        mg = '__---___      x        | |             .               |'
-        mh = '¤ |-| ¤|         ,  xXX                                |'
-        mi = '  |-|  |                                   xXxx,       |'
-        mj = 'x             X                  .                     |'
+        global mapa, mapb, mapc, mapd, mape, mapf, mapg, maph, mapi, mapj
+        mapa = '                        _                              |'
+        mapb = '-___                  _| |                             |'
+        mapc = '| ¤|           .     | |.|_          .                 |'
+        mapd = '|  |___---___        | | | |                           |'
+        mape = '    |¤ |-|  |        \_  |.|    \'       xx             |'
+        mapf = '____|  |-|  |          | ._/     ,                     |'
+        mapg = '__---___      x        | |             .               |'
+        maph = '¤ |-| ¤|         ,  xXX                                |'
+        mapi = '  |-|  |                                   xXxx,       |'
+        mapj = 'x             X                  .                     |'
         print(' ________________________________________________________________________________________________________________')
-        print('|                                                         ' + ma)
-        print('|         .             _         __.--\'--.__        ___--' + mb)
-        print('|                     _|.|    ,   | ¤  ¤  ¤ |  .xXCx |¤ |-' + mc)
-        print('|              ,     |.| |        |_________|    .   |  |-' + md)
-        print('|    .    .#x,       | |.|        | ¤ |-| ¤ | ___-S-___  |' + me)
-        print('|         #&#=       \_. |    .Xx |   |-|   | || | ¤ ¤|  |' + mf)
-        print('|         -X#-.. _,  .x| |Xc            \_____||-|_   | /_' + mg)
-        print('|    .#+.     xC                         ___---___ \___/ |' + mh)
-        print('|    %#X#.  .                 xxX        |  |-| ¤|  \____|' + mi)
-        print('|    -##-_.,. _. ,  .       .            |  |-|  |____/   ' + mj)
+        print('|                                                         ' + mapa)
+        print('|         .             _         __.--\'--.__        ___--' + mapb)
+        print('|                     _|.|    ,   | ¤  ¤  ¤ |  .xXCx |¤ |-' + mapc)
+        print('|              ,     |.| |        |_________|    .   |  |-' + mapd)
+        print('|    .    .#x,       | |.|        | ¤ |-| ¤ | ___-S-___  |' + mape)
+        print('|         #&#=       \_. |    .Xx |   |-|   | || | ¤¤¤|  |' + mapf)
+        print('|         -X#-.. _,  .x| |Xc            \_____||-|_   | /_' + mapg)
+        print('|    .#+.     xC                         ___---___ \___/ |' + maph)
+        print('|    %#X#.  .                 xxX        |  |-| ¤|  \____|' + mapi)
+        print('|    -##-_.,. _. ,  .       .            |  |-|  |____/   ' + mapj)
         print('|________________________________________________________________________________________________________________|')
         print('|                                                                                                                |')
 
@@ -283,55 +284,55 @@ def main():
 
     def facscr(): # factory screen
         clrscr()
-        global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '| \______       \ /    \   _/                        | |'
-        mb = ' \_____  \       [     _]_/. ___ .  . ___ .  . ___ . | |'
-        mc = ' _     \  |       \  _/     |   |    |   |    |   |  | |'
-        md = '| \____/  |        \/       |___|    |___|    |___|  | |'
-        me = ' \_______/          |      \'     \'  \'     \'  \'     \' | |'
-        mf = ' _ _ _ _ _ _ _ _ _ _ ] _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ | |'
-        mg = '                    /                                | |'
-        mh = '                    |                                | |'
-        mi = '        x  .                 , #                       |'
-        mj = '                  #               .              .     |'
+        global mapa, mapb, mapc, mapd, mape, mapf, mapg, maph, mapi, mapj
+        mapa = '| \______       \ /    \   _/                        | |'
+        mapb = ' \_____  \       [     _]_/. ___ .  . ___ .  . ___ . | |'
+        mapc = ' _     \  |       \  _/     |   |    |   |    |   |  | |'
+        mapd = '| \____/  |        \/       |___|    |___|    |___|  | |'
+        mape = ' \_______/          |      \'     \'  \'     \'  \'     \' | |'
+        mapf = ' _ _ _ _ _ _ _ _ _ _ ] _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ | |'
+        mapg = '                    /                                | |'
+        maph = '                    |                                | |'
+        mapi = '        x  .                 , #                       |'
+        mapj = '                  #               .              .     |'
         print(' ________________________________________________________________________________________________________________')
-        print('|          |.  |   .|    |    |       ___________         ' + ma)
-        print('|          | \'   .  |    |    |      |           |        ' + mb)
-        print('|          \___    .|    |\   |      |           |        ' + mc)
-        print('|              |.   |    | \  |      |           |        ' + md)
-        print('|       xX     |  . |       \ |      |   _____   |        ' + me)
-        print('|                            \|_ _ _ |  |____]|  | _ _ _ _' + mf)
-        print('|            ,                |      |         *\'|        ' + mg)
-        print('|                .            |      |           |        ' + mh)
-        print('|                       x                      ,          ' + mi)
-        print('|                              .                          ' + mj)
+        print('|          |.  |   .|    |    |       ___________         ' + mapa)
+        print('|          | \'   .  |    |    |      |           |        ' + mapb)
+        print('|          \___    .|    |\   |      |           |        ' + mapc)
+        print('|              |.   |    | \  |      |           |        ' + mapd)
+        print('|       xX     |  . |       \ |      |   _____   |        ' + mape)
+        print('|                            \|_ _ _ |  |____]|  | _ _ _ _' + mapf)
+        print('|            ,                |      |         *\'|        ' + mapg)
+        print('|                .            |      |           |        ' + maph)
+        print('|                       x                      ,          ' + mapi)
+        print('|                              .                          ' + mapj)
         print('|________________________________________________________________________________________________________________|')
         print('|                                                                                                                |')
 
     def facins():
         clrscr()
-        global ma, mb, mc, md, me, mf, mg, mh, mi, mj
-        ma = '           ||    |                    ___----___       |'
-        mb = '           ||    |   _______.        /__----__ /|      |'
-        mc = '      <   _||    |\'" _____./|       |  _____  |||      |'
-        md = '  _,.-|^\'"_|     |\'"      | |       | | ___ | |||      |'
-        me = ' /_,.-=^\'"          .||.  |/| _____ | | |_| | ||| _____|'
-        mf = '||          _____  | [] | | |_ _ _ _|_|_ _ _|_|_|_ _ _ |'
-        mg = '||  |  |   |o o x|  \'--\'  |/_/_/_/_/_/_/_/_/_/_/_/_/_/_|'
-        mh = '||  *  *   |x x o|        || o o o o o o o o o o o o o |'
-        mi = '|           """""         ||                 .         |'
-        mj = '                        .                       .      |'
+        global mapa, mapb, mapc, mapd, mape, mapf, mapg, maph, mapi, mapj
+        mapa = '           ||    |                    ___----___       |'
+        mapb = '           ||    |   _______.        /__----__ /|      |'
+        mapc = '      <   _||    |\'" _____./|       |  _____  |||      |'
+        mapd = '  _,.-|^\'"_|     |\'"      | |       | | ___ | |||      |'
+        mape = ' /_,.-=^\'"          .||.  |/| _____ | | |_| | ||| _____|'
+        mapf = '||          _____  | [] | | |_ _ _ _|_|_ _ _|_|_|_ _ _ |'
+        mapg = '||  |  |   |o o x|  \'--\'  |/_/_/_/_/_/_/_/_/_/_/_/_/_/_|'
+        maph = '||  *  *   |x x o|        || o o o o o o o o o o o o o |'
+        mapi = '|           """""         ||                 .         |'
+        mapj = '                        .                       .      |'
         print(' ________________________________________________________________________________________________________________')
-        print('|     _.-^\'|   |                                          ' + ma)
-        print('|_.-^\'     |   |                                          ' + mb)
-        print('|          |   |                        ______            ' + mc)
-        print('|          |   |                       |      |           ' + md)
-        print('|          |   |_____________________  |______| __________' + me)
-        print('|          |  /                     . /______/|           ' + mf)
-        print('|          | /          -         .   ||     ||     -     ' + mg)
-        print('|          |/                         |      |            ' + mh)
-        print('|          |        .        -                    .       ' + mi)
-        print('|          |                           .                  ' + mj)
+        print('|     _.-^\'|   |                                          ' + mapa)
+        print('|_.-^\'     |   |                                          ' + mapb)
+        print('|          |   |                        ______            ' + mapc)
+        print('|          |   |                       |      |           ' + mapd)
+        print('|          |   |_____________________  |______| __________' + mape)
+        print('|          |  /                     . /______/|           ' + mapf)
+        print('|          | /          -         .   ||     ||     -     ' + mapg)
+        print('|          |/                         |      |            ' + maph)
+        print('|          |        .        -                    .       ' + mapi)
+        print('|          |                           .                  ' + mapj)
         print('|__________|_____________________________________________________________________________________________________|')
         print('|                                                                                                                |')
 
@@ -362,10 +363,10 @@ def main():
         print('| 3. Leave                                                     ___________________ _________________ ____________|')
         print('|_____________________________________________________________| Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
         print('                                                              |___________________|_________________|____________|')
-        a = input(' > ')
-        a = a.lower()
+        answ = input(' > ')
+        answ = answ.lower()
 
-        if a == '1' or a == 'one' or a == 'attempt to cross the river' or a == 'cross the river' or a == 'cross river':
+        if answ == '1' or answ == 'one' or answ == 'attempt to cross the river' or answ == 'cross the river' or answ == 'cross river':
 
             def rivded(): # river dead
                 dedscr()
@@ -414,13 +415,13 @@ def main():
                 print('| 4. Jump over the rocks to the other riverbank                ___________________ _________________ ____________|')
                 print('|_____________________________________________________________| Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
                 print('                                                              |___________________|_________________|____________|')
-                a = input(' Write a number: ')
-                a = a.lower()
+                answ = input(' Write a number: ')
+                answ = answ.lower()
 
-                if a == '1' or a == 'one' or a == '3' or a == 'three':
+                if answ == '1' or answ == 'one' or answ == '3' or answ == 'three':
                     rivded()
 
-                elif a == '2' or a == 'two':
+                elif answ == '2' or answ == 'two':
 
                     if hdmd == 'off)':
                         rivsur()
@@ -428,21 +429,21 @@ def main():
                     else:
                         rivded()
 
-                elif a == '4' or a == 'four':
+                elif answ == '4' or answ == 'four':
                     rivsur()
 
-                elif a == 'leave' or a == 'cancel':
+                elif answ == 'leave' or answ == 'cancel':
                     lvlone()
 
-                elif a == 'exit' or a == 'exit game' or a == 'stop game':
+                elif answ == 'exit' or answ == 'exit game' or answ == 'stop game':
                     bktk = 0
                     main()
 
-                elif a == 'help' or a == 'please help' or a == '?' or a == 'h':
+                elif answ == 'help' or answ == 'please help' or answ == '?' or answ == 'h':
                     hlpscr()
                     rivatc()
 
-                elif a == 'look map' or a == 'look at map' or a == 'look at the map' or a == 'use map' or a == 'use the map' or a == 'map':
+                elif answ == 'look map' or answ == 'look at map' or answ == 'look at the map' or answ == 'use map' or answ == 'use the map' or answ == 'map':
                     ingmap()
                     rivatc()
 
@@ -451,7 +452,7 @@ def main():
 
             rivatc()
 
-        elif a == '2' or a == 'two' or a == 'fill canteen' or a == 'fill the canteen':
+        elif answ == '2' or answ == 'two' or answ == 'fill canteen' or answ == 'fill the canteen':
             if cafd:
                 global cntn
                 clrscr()
@@ -484,18 +485,18 @@ def main():
             else:
                 aririv()
 
-        elif a == '3' or a == 'three' or a == 'leave':
+        elif answ == '3' or answ == 'three' or answ == 'leave':
             lvlone()
         
-        elif a == 'look map' or a == 'look at map' or a == 'look at the map' or a == 'use map' or a == 'use the map' or a == 'map':
+        elif answ == 'look map' or answ == 'look at map' or answ == 'look at the map' or answ == 'use map' or answ == 'use the map' or answ == 'map':
             ingmap()
             aririv()
 
-        elif a == 'help' or a == 'please help' or a == '?' or a == 'h':
+        elif answ == 'help' or answ == 'please help' or answ == '?' or answ == 'h':
             hlpscr()
             aririv()
 
-        elif a == 'exit' or a == 'exit game' or a == 'stop game':
+        elif answ == 'exit' or answ == 'exit game' or answ == 'stop game':
             bktk = 0
             main()
 
@@ -506,16 +507,16 @@ def main():
         global lkmp
         clrscr()
         print(' ________________________________________________________________________________________________________________')
-        print('|  __  |                           |                     |' + ma)
-        print('| / _\ |                           | Map Legend:         |' + mb)
-        print('| \__/ |  .               .        | OO = City           |' + mc)
-        print('|______| /|   x____O      |\     _/| O = Town            |' + md)
-        print('|                              _/  | x = Village         |' + me)
-        print('|        _ --- _            _-\'    | .                   |' + mf)
-        print('|     _-\'        \_        /    _--| |\ = Mountain       |' + mg)
-        print('|  _-\'          W  \      /    /   | Full line = Road    |' + mh)
-        print('|-\' OO              \'-_ _-----\'    | Dotted line = River |' + mi)
-        print('|                            \'-_--_| W = Where I woke up |' + mj)
+        print('|  __  |                           |                     |' + mapa)
+        print('| / _\ |                           | Map Legend:         |' + mapb)
+        print('| \__/ |  .               .        | OO = City           |' + mapc)
+        print('|______| /|   x____O      |\     _/| O = Town            |' + mapd)
+        print('|                              _/  | x = Village         |' + mape)
+        print('|        _ --- _            _-\'    | .                   |' + mapf)
+        print('|     _-\'        \_        /    _--| |\ = Mountain       |' + mapg)
+        print('|  _-\'          W  \      /    /   | Full line = Road    |' + maph)
+        print('|-\' OO              \'-_ _-----\'    | Dotted line = River |' + mapi)
+        print('|                            \'-_--_| W = Where I woke up |' + mapj)
         print('|__________________________________|_____________________|_______________________________________________________|')
         print('|                                                                                                                |')
 
@@ -547,16 +548,16 @@ def main():
             print('|                                                                                       _________________________|')
             print('|______________________________________________________________________________________| Type "cancel" to cancel |')
             print('                                                                                       |_________________________|')
-            a = input(' > ')
-            a = a.lower()
+            answ = input(' > ')
+            answ = answ.lower()
 
-            if a == '1' or a == 'start':
+            if answ == '1' or answ == 'start':
                 bktk = 1
                 pnts = 0
                 ptsclc()
                 main()
 
-            elif a == '2' or a == 'town':
+            elif answ == '2' or answ == 'town':
                 cntn = 1
                 bktk = 2
                 cafd = 1
@@ -568,7 +569,7 @@ def main():
                 ptsclc()
                 main()
 
-            elif a == '3' or a == 'saloon' or a == 'factory':
+            elif answ == '3' or answ == 'saloon' or answ == 'factory':
                 cntn = 1
                 cafd = 1
                 crri = 1
@@ -581,7 +582,7 @@ def main():
                 ptsclc()
                 main()
 
-            elif a == 'cancel':
+            elif answ == 'cancel':
                 clrscr()
                 sttmen()
 
@@ -596,15 +597,15 @@ def main():
         print('| 4. Level Select                                                                                                |')
         print('|________________________________________________________________________________________________________________|')
         print()
-        a = input(' Write a number: ')
-        a = a.lower()
+        answ = input(' Write a number: ')
+        answ = answ.lower()
 
-        if a == '1' or a == 'one':
+        if answ == '1' or answ == 'one':
             bktk = 1
             ptsclc()
             clrscr()
 
-        elif a == '2' or a == 'two':
+        elif answ == '2' or answ == 'two':
             manmen()
             print('| Caught in the middle is a text adventure game inspired by early 80\'s games like Space Quest and Monkey Island, |')
             print('| but with my own personal twist on it. Here\'s quick tip on how to win:                                          |')
@@ -616,7 +617,7 @@ def main():
             clrscr()
             sttmen()
 
-        elif a == '3' or a == 'three':
+        elif answ == '3' or answ == 'three':
 
             def tohdmd(): # turn on hdmd
                 global hdmd
@@ -633,10 +634,10 @@ def main():
                 print('|                                                                                                                |')
                 print('|________________________________________________________________________________________________________________|')
                 print()
-                a = input(' y/n: ')
-                a = a.lower()
+                answ = input(' y/n: ')
+                answ = answ.lower()
 
-                if a == 'y' or a == 'yes':
+                if answ == 'y' or answ == 'yes':
                     if hdmd == 'off)':
                         hdmd = 'on) '
 
@@ -646,7 +647,7 @@ def main():
                     clrscr()
                     sttmen()
 
-                elif a == 'n' or a == 'no':
+                elif answ == 'n' or answ == 'no':
                     if hdmd == 'off)':
                         hdmd = 'off)'
 
@@ -661,7 +662,7 @@ def main():
 
             tohdmd()
 
-        elif a == '4' or a == 'four':
+        elif answ == '4' or answ == 'four':
             manmen()
             print('| Please enter the password                                                                                      |')
             print('|                                                                                                                |')
@@ -686,7 +687,7 @@ def main():
                 input(' Press ENTER to continue: ')
                 sttmen()
 
-        elif a == '5' or a == 'five':
+        elif answ == '5' or answ == 'five':
             manmen()
             print('| Hi! I am DonTristan, the developer of this game. Thank you so much for installing it. The development of this  |')
             print('| game started with me not doing what I was supposed to do in school and ended up with what you see now. It has  |')
@@ -698,7 +699,7 @@ def main():
             clrscr()
             sttmen()
 
-        elif a == '6' or a == 'six':
+        elif answ == '6' or answ == 'six':
             crdscr()
             print('|                                                    Credits                                                     |')
             print('|                                                                                                                |')
@@ -725,11 +726,11 @@ def main():
             clrscr()
             sttmen()
 
-        elif a == '7' or a == 'seven' or a == 'exit' or a == 'exit game':
+        elif answ == '7' or answ == 'seven' or answ == 'exit' or answ == 'exit game':
             clrscr()
             exit()
 
-        elif a == 'cheat':
+        elif answ == 'cheat':
             lvlsel() 
 
         else:
@@ -761,10 +762,10 @@ def main():
         print('|                                                              ___________________ _________________ ____________|')
         print('|_____________________________________________________________| Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
         print('                                                              |___________________|_________________|____________|')
-        a = input(' > ')
-        a = a.lower()
+        answ = input(' > ')
+        answ = answ.lower()
 
-        if a == 'look' or a == 'look around' or a == 'look town' or a == 'look at town' or a == 'look at the town' or a == 'look village' or a == 'look at village' or a == 'look at the village':
+        if answ == 'look' or answ == 'look around' or answ == 'look town' or answ == 'look at town' or answ == 'look at the town' or answ == 'look village' or answ == 'look at village' or answ == 'look at the village':
             clrscr()
 
             if crri:
@@ -782,11 +783,11 @@ def main():
             input(' Press ENTER to continue: ')
             lvlone()
 
-        elif a == 'help' or a == 'please help' or a == '?' or a == 'h':
+        elif answ == 'help' or answ == 'please help' or answ == '?' or answ == 'h':
             hlpscr()
             lvlone()
 
-        elif a == 'look sun' or a == 'look at the sun' or a == 'look at sun' or a == 'look horizon' or a == 'look at horizon' or a == 'look at the horizon':
+        elif answ == 'look sun' or answ == 'look at the sun' or answ == 'look at sun' or answ == 'look horizon' or answ == 'look at horizon' or answ == 'look at the horizon':
             clrscr()
 
             if crri:
@@ -804,7 +805,7 @@ def main():
             input(' Press ENTER to continue: ')
             lvlone()
 
-        elif a == 'look self' or a == 'look me' or a == 'look at self':
+        elif answ == 'look self' or answ == 'look me' or answ == 'look at self':
             clrscr()
 
             if crri:
@@ -841,7 +842,7 @@ def main():
                 input(' Press ENTER to continue: ')
                 lvlone()
 
-        elif a == 'look canteen' or a == 'drink canteen' or a == 'look at canteen' or a == 'look flask' or a == 'drink from canteen' or a == 'drink flask' or a == 'drink from flask' or a == 'drink from canteen' or a == 'use canteen' or a == 'use the canteen' or a == 'use flask' or a == 'use the flask':
+        elif answ == 'look canteen' or answ == 'drink canteen' or answ == 'look at canteen' or answ == 'look flask' or answ == 'drink from canteen' or answ == 'drink flask' or answ == 'drink from flask' or answ == 'drink from canteen' or answ == 'use canteen' or answ == 'use the canteen' or answ == 'use flask' or answ == 'use the flask':
             clrscr()
 
             if crri:
@@ -866,7 +867,7 @@ def main():
             input(' Press ENTER to continue: ')
             lvlone()
 
-        elif a == 'look mountain' or a == 'look at mountain' or a == 'look at the mountain' or a == 'look mountains' or a == 'look at mountains' or a == 'look at the mountains':
+        elif answ == 'look mountain' or answ == 'look at mountain' or answ == 'look at the mountain' or answ == 'look mountains' or answ == 'look at mountains' or answ == 'look at the mountains':
             clrscr()
 
             if crri:
@@ -875,8 +876,8 @@ def main():
             else:
                 sttplc()
 
-            print('| You gaze over at the mountains. They both have a sudden drop right after the peak. You wonder if they might    |')
-            print('| once have been one whole mountain and not what appears to be two halves                                        |')
+            print('| You gaze over at the mountains. They both have a sudden drop right after the peak. You take a moment to wonder |')
+            print('| if the may have once been one whole mountain                                                                   |')
             print('|                                                                                                                |')
             print('|                                                              ___________________ _________________ ____________|')
             print('|_____________________________________________________________| Help unavailable  | Map unavailable | Pnts = ' + pnsp + ' |')
@@ -884,16 +885,16 @@ def main():
             input(' Press ENTER to continue: ')
             lvlone()
 
-        elif a == 'look map' or a == 'look at map' or a == 'look at my map' or a == 'use map' or a == 'use the map' or a == 'map':
+        elif answ == 'look map' or answ == 'look at map' or answ == 'look at my map' or answ == 'use map' or answ == 'use the map' or answ == 'map':
             ingmap()
             lvlone()
 
-        elif a == 'exit' or a == 'exit game' or a == 'stop game':
+        elif answ == 'exit' or answ == 'exit game' or answ == 'stop game':
             bktk = 0
             main()
 
         # needs a rework for continuity, actually add the city level when it comes to that
-        elif a == 'walk city' or a == 'walk to city' or a == 'walk to the city':
+        elif answ == 'walk city' or answ == 'walk to city' or answ == 'walk to the city':
             global rotv
 
             if crri:
@@ -917,8 +918,8 @@ def main():
             main()
 
         # this system is actually quite smart, I might still change it though just for conformity's sake
-        elif a == 'walk town' or a == 'walk to the town' or a == 'walk to town' or a == 'walk river' or a == 'walk to river' or a == 'walk to the river' or a == 'walk village' or a == 'walk to the village' or a == 'walk to village':
-            if 'town' in str(a):
+        elif answ == 'walk town' or answ == 'walk to the town' or answ == 'walk to town' or answ == 'walk river' or answ == 'walk to river' or answ == 'walk to the river' or answ == 'walk village' or answ == 'walk to the village' or answ == 'walk to village':
+            if 'town' in str(answ):
                 rotv = 1
                 clrscr()
 
@@ -931,7 +932,7 @@ def main():
                     bktk = 2
                     main()
 
-            elif 'river' in str(a):
+            elif 'river' in str(answ):
                 rotv = 0
                 aririv()
                 bktk = 1
@@ -979,13 +980,13 @@ def main():
                     print('| too large to move and in the middle of the room you find a single chair                                        |')
                     print('|                                                                                                                |')
 
-                print('|                                       ______________________ ___________________ _________________ ____________|')
-                print('|______________________________________| Type "leave" to leave| Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
-                print('                                       |______________________|___________________|_________________|____________|')
-                a = input(' > ')
-                a = a.lower()
+                print('|                                      _______________________ ___________________ _________________ ____________|')
+                print('|_____________________________________| Type "leave" to leave | Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
+                print('                                      |_______________________|___________________|_________________|____________|')
+                answ = input(' > ')
+                answ = answ.lower()
 
-                if a == 'take chair' or a == 'take the chair' or a == 'steal chair' or a == 'steal the chair':
+                if answ == 'take chair' or answ == 'take the chair' or answ == 'steal chair' or answ == 'steal the chair':
                     if made:
                         facins()
                         print('| Out of respect for deceased, you decide to not steal the chair                                                 |')
@@ -1022,7 +1023,7 @@ def main():
                             input(' Press ENTER to continue: ')
                             lvlins()
                     
-                elif a == 'take machinery' or a == 'take the machinery' or a == 'take machine' or a == 'take the machine' or a == 'take heavy machinery' or a == 'take the heavy machinery' or a == 'take heavy machine' or a == 'take the heavy machine':
+                elif answ == 'take machinery' or answ == 'take the machinery' or answ == 'take machine' or answ == 'take the machine' or answ == 'take heavy machinery' or answ == 'take the heavy machinery' or answ == 'take heavy machine' or answ == 'take the heavy machine':
                     facins()
                     print('| The machinery is far to heavy to move.                                                                         |')
                     print('|                                                                                                                |')
@@ -1033,10 +1034,10 @@ def main():
                     input(' Press ENTER to continue: ')
                     lvlins()
 
-                elif a == 'leave':
+                elif answ == 'leave':
                     lvlfac()
 
-                elif a == 'exit':
+                elif answ == 'exit':
                     bktk = 0
                     main()
 
@@ -1062,10 +1063,10 @@ def main():
             print('| 3. Force open                        _______________________ ___________________ _________________ ____________|')
             print('|_____________________________________| Type "leave" to leave | Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
             print('                                      |_______________________|___________________|_________________|____________|')
-            a = input(' Write a number: ')
-            a = a.lower()
+            answ = input(' Write a number: ')
+            answ = answ.lower()
 
-            if a == '1' or a == 'knock' or a == 'knock on door':
+            if answ == '1' or answ == 'knock' or answ == 'knock on door':
                 if maan:
                     facscr()
                     print('| The man opens the slit. He then immediately closes it again.                                                   |')
@@ -1096,10 +1097,10 @@ def main():
                     print('|                                                              ___________________ _________________ ____________|')
                     print('|_____________________________________________________________| Help unavailable  | Map unavailable | Pnts = ' + pnsp + ' |')
                     print('                                                              |___________________|_________________|____________|')
-                    a = input(' > ')
-                    a = a.lower()
+                    answ = input(' > ')
+                    answ = answ.lower()
 
-                    if a == 'knarkle':
+                    if answ == 'knarkle':
                         lvlins()
 
                     else:
@@ -1113,7 +1114,7 @@ def main():
                         input(' Press ENTER to continue: ')
                         lvlfac()
 
-            elif a == '2' or a == 'wait' or a == 'wait around':
+            elif answ == '2' or answ == 'wait' or answ == 'wait around':
                 global tiwt
 
                 if tiwt == 0:
@@ -1174,22 +1175,22 @@ def main():
                     input(' Press ENTER to continue: ')
                     lvlfac()
 
-            elif a == '3' or a == 'force door' or a == 'force open' or a == 'force open door':
+            elif answ == '3' or answ == 'force door' or answ == 'force open' or answ == 'force open door':
                 made = 1
                 lvlins()
 
-            elif a == 'leave':
+            elif answ == 'leave':
                 clrscr() 
 
-            elif a == 'help' or a == 'please help' or a == '?' or a == 'h':
+            elif answ == 'help' or answ == 'please help' or answ == '?' or answ == 'h':
                 hlpscr()
                 lvlfac()     
 
-            elif a == 'look map' or a == 'look at map' or a == 'look at the map' or a == 'use map' or a == 'use the map' or a == 'map':
+            elif answ == 'look map' or answ == 'look at map' or answ == 'look at the map' or answ == 'use map' or answ == 'use the map' or answ == 'map':
                 ingmap()
                 lvlfac()
 
-            elif a == 'exit' or a == 'exit game' or a == 'stop game':
+            elif answ == 'exit' or answ == 'exit game' or answ == 'stop game':
                 bktk = 0
                 main()
 
@@ -1223,10 +1224,10 @@ def main():
             print('|_____________________________________________________________| Type "h" for help |  Map available  | Pnts = ' + pnsp + ' |')
             print('                                                              |___________________|_________________|____________|')
 
-            a = input(' > ')
-            a = a.lower()
+            answ = input(' > ')
+            answ = answ.lower()
 
-            if a == 'lick cactus' or a == 'lick the cactus' or a == 'lick a cactus':
+            if answ == 'lick cactus' or answ == 'lick the cactus' or answ == 'lick a cactus':
                 dedscr()
                 print('| Congratulations! You are dead.                                                                                 |')
                 print('| You died from shoving your face in a cactus.                                                                   |')
@@ -1237,7 +1238,7 @@ def main():
                 input(' Press ENTER to restart: ')
                 main()
 
-            elif a == 'look cactus' or a == 'look cacti' or a == 'look at cactus' or a == 'look at the cactus' or a == 'look at cacti' or a == 'look at the cacti':
+            elif answ == 'look cactus' or answ == 'look cacti' or answ == 'look at cactus' or answ == 'look at the cactus' or answ == 'look at cacti' or answ == 'look at the cacti':
                 clrscr()
                 twnscr()
                 print('| There are multiple cacti scattered around the town. They look both larger and spinier than any other cacti     |')
@@ -1249,11 +1250,11 @@ def main():
                 input(' Press ENTER to continue: ')
                 lvl2tw()
 
-            elif a == 'help' or a == 'please help' or a == '?' or a == 'h':
+            elif answ == 'help' or answ == 'please help' or answ == '?' or answ == 'h':
                 hlpscr()
                 lvl2tw()
 
-            elif a == 'look' or a == 'look around' or a == 'look surroundings':
+            elif answ == 'look' or answ == 'look around' or answ == 'look surroundings':
                 clrscr()
                 twnscr()
                 print('| You find yourself in a small town in the desert. You tried reading the name of the town from a sign you saw    |')
@@ -1271,7 +1272,7 @@ def main():
                 input(' Press ENTER to continue: ')
                 lvl2tw()
 
-            elif a == 'look saloon' or a == 'look at saloon' or a == 'look at the saloon' or a == 'look bar' or a == 'look at bar' or a == 'look at the bar' or a == 'look factory' or a == 'look at factory' or a == 'look at the factory':
+            elif answ == 'look saloon' or answ == 'look at saloon' or answ == 'look at the saloon' or answ == 'look bar' or answ == 'look at bar' or answ == 'look at the bar' or answ == 'look factory' or answ == 'look at factory' or answ == 'look at the factory':
                 clrscr()
                 twnscr()
 
@@ -1290,22 +1291,22 @@ def main():
                 input(' Press ENTER to continue: ')
                 lvl2tw()
 
-            elif a == 'walk saloon' or a == 'walk to saloon' or a == 'walk to the saloon' or a == 'walk factory' or a == 'walk to factory' or a == 'walk to the factory':
+            elif answ == 'walk saloon' or answ == 'walk to saloon' or answ == 'walk to the saloon' or answ == 'walk factory' or answ == 'walk to factory' or answ == 'walk to the factory':
                 lvlfac()
 
-            elif a == 'look map' or a == 'look at map' or a == 'look at the map' or a == 'use map' or a == 'use the map' or a == 'map':
+            elif answ == 'look map' or answ == 'look at map' or answ == 'look at the map' or answ == 'use map' or answ == 'use the map' or answ == 'map':
                 ingmap()
                 lvl2tw()
 
-            elif a == 'exit' or a == 'exit game' or a == 'stop game':
+            elif answ == 'exit' or answ == 'exit game' or answ == 'stop game':
                 bktk = 0
                 main()
 
-            elif a == 'walk river' or a == 'walk to river' or a == 'walk to the river':
+            elif answ == 'walk river' or answ == 'walk to river' or answ == 'walk to the river':
                 rotv = 0
                 aririv()
 
-            elif a == 'walk plain' or a == 'walk to plain' or a == 'walk to the plain' or a == 'walk plains' or a == 'walk to plains' or a == 'walk to the plains' or a == 'walk desert' or a == 'walk to desert' or a == 'walk to the desert' or a == 'leave' or a == 'leave town':
+            elif answ == 'walk plain' or answ == 'walk to plain' or answ == 'walk to the plain' or answ == 'walk plains' or answ == 'walk to plains' or answ == 'walk to the plains' or answ == 'walk desert' or answ == 'walk to desert' or answ == 'walk to the desert' or answ == 'leave' or answ == 'leave town':
                 bktk = 1
                 main()
 
