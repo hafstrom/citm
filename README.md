@@ -1,3 +1,3 @@
 # citm
 Caught in the middle
-Game by DonTristan
+Game by DonTristan / Tristan Hafström
