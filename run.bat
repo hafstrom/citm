@@ -1,3 +1,3 @@
-cd source
-py citmhoam.py
-py stopper.py
+cd src
+python citm.py
+python stopper.py

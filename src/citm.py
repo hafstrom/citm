@@ -727,7 +727,6 @@ def main(): #mainloop
             sttmen()
 
         elif answ == '7' or answ == 'seven' or answ == 'exit' or answ == 'exit game':
-            clrscr()
             exit()
 
         elif answ == 'cheat':
